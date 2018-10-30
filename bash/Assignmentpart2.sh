@@ -16,7 +16,7 @@ echo "The free amount of RAM is "
 awk '/Mem/ {print $4}' <(free -m)
 echo "-----------------------------"
 echo "The percentage of the RAM used for share is "
-awk '/Mem/ {print $5/$3 "%"}' <(free -m)
+awk '/Mem/ {print $5/$3 *100 "%"}' <(free -m)
 echo "-----------------------------"
 echo "The percentage of the RAM used in total is "
 awk '/Mem/ {print $3/$2 *100 "%"}' <(free -m)
