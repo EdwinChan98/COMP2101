@@ -1,3 +1,3 @@
 #!/bin/bash
-dpkg -S
+dpkg -S filepath
 echo "What is the command name?"
