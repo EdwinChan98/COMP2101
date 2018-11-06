@@ -2,9 +2,9 @@
 dpkg -S filepath
 echo "What is the command name?"
 enter=0
-while [[ $enter="" ]]; do
+while [[ $enter = "" ]]; do
   case $1 in
-    -S
+    -S )
    exit
    ;;
   esac
