@@ -8,6 +8,7 @@ command
 while [[ $commandname = "" ]]; do
   case $commandname in
     -h | --help)
+    echo "Type the command please."
     exit 0 #exit with no error.
   esac
   #exit if user put nothing.
