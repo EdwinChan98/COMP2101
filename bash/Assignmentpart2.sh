@@ -29,6 +29,10 @@ awk '/Mem/ {print $7}' <(free -m)
 echo "The free amount of RAM is "
 #getting the free amount of RAM from 'free -m'.
 awk '/Mem/ {print $4}' <(free -m)
+#showing the different between the available and free amount.
+echo "The different between the available and free amount is "
+#calculating the different between the available and free amount from 'free -m'.
+awk '/^Mem/ {print $7 - $4}' <(free -m)
 #line for separate.
 echo "-----------------------------"
 #showing the percentage of the RAM used for share.
@@ -47,3 +51,5 @@ echo "-----------------------------"
 echo "The percentage of the RAM used for cache in total is "
 #calculating the percentage of the RAM used for cache in total from 'free -m'.
 awk '/Mem/ {print $6/$2 *100 "%"}' <(free -m)
+#showing the end of the report.
+echo "This is the end of the report."
