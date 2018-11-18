@@ -10,8 +10,7 @@ while [[ $count -gt 0 ]]; do
     -h | --help )
       echo "Please type '-c' for setting the number of dice and type '-s' for setting the sides of the dice."
       echo "The default count of dice is 1 and sides is 6."
-      echo "The count of dice must be a number from 1 to 9."
-      echo "The sides per dice must be the number from 4 to 20."
+      echo "The count of dice must be a number from 1 to 9 and the sides per dice must be the number from 4 to 20."
       exit 0 #Return to no error.
       ;;
   esac
